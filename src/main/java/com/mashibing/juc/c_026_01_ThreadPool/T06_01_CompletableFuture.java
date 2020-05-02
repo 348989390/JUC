@@ -33,10 +33,10 @@ public class T06_01_CompletableFuture {
 
         CompletableFuture.allOf(futureTM, futureTB, futureJD).join();
 
-        CompletableFuture.supplyAsync(()->priceOfTM())
-                .thenApply(String::valueOf)
-                .thenApply(str-> "price " + str)
-                .thenAccept(System.out::println);
+//        CompletableFuture.supplyAsync(()->priceOfTM())
+//                .thenApply(String::valueOf)
+//                .thenApply(str-> "price " + str)
+//                .thenAccept(System.out::println);
 
 
         end = System.currentTimeMillis();
